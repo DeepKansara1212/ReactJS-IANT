@@ -48,6 +48,7 @@ promiseThree.then(function (userData) {
 */
 
 // 4) Promise Chaining
+/*
 const promiseFour = new Promise(function (resolve, reject) {
   const isError = true;
 
@@ -76,3 +77,34 @@ promiseFour
     console.log(error);
   })
   .finally(() => console.log("Always Run"));
+
+*/
+
+// 5)
+/*
+const promiseFive = new Promise((resolve, reject) => {
+  const isError = false;
+
+  if (!isError) {
+    resolve({
+      username: "Deep",
+      email: "deep@google.com",
+      password: "Deep@123",
+    });
+  } else {
+    reject("ERROR: Something went wrong");
+  }
+});
+
+const promiseFiveConsume = async function () {
+  try {
+    const data = await promiseFive;
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+promiseFiveConsume() 
+*/
+
