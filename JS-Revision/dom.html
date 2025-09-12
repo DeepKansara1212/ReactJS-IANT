@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style></style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="btn">Click Me</button>
+</body>
+</html>
+
+
+<script>
+    const btn = document.querySelector("#btn")
+
+    function random(number) {
+        return Math.floor(Math.random() * (number + 1))
+    }
+
+    btn.addEventListener('dblclick', () => {
+        const random_color = `rgb(${random(255)} ${random(255)} ${random(255)})`
+        // console.log(random_color);
+        document.body.style.backgroundColor = random_color
+    })
+</script>
