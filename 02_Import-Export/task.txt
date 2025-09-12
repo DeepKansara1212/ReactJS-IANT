@@ -1,0 +1,16 @@
+## **Problem Statement 1**
+
+Build a Mini Profile Card App using React Components
+
+**Requirements:**
+
+1. Create a **`ProfileCard` component** that shows:
+    - A user’s name
+    - A short description
+    - A button
+2. Split the UI into **separate components**:
+    - `Header.jsx` → Displays the user’s name (use **default export**)
+    - `Description.jsx` → Displays the user’s description (use **named export**)
+    - `ActionButton.jsx` → Displays a button (use **named export**)
+    - `ProfileCard.jsx` → Imports all the above components and combines them into a card layout
+3. Import and use the **`ProfileCard`** component in `App.jsx`.
