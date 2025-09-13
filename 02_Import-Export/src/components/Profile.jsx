@@ -1,14 +1,19 @@
 import React from "react";
+import profilePic from "../assets/Images/profile-pic.jpg"
 
 // Named Export
 export const Profile = () => {
   return (
     <div>
       <img
-        src="/Images/profile-pic-public.jpg"
+        // Public Img
+        // src="/Images/profile-pic-public.jpg"
+
+        // Asset Img
+        src={profilePic}
         alt="Katherine Johnson"
         height={200}
-        width={200}
+        width={200} 
       />
     </div>
   );
