@@ -9,6 +9,8 @@ const App = () => {
   const user = { name: "Deep", role: "Developer" };
   const skills = ["React", "JS", "Tailwind"];
 
+  const alertMsg = (name) => alert(`Hello, ${name}`);
+
   return (
     <>
       <h1>Value of a: {a + b}</h1>
@@ -16,6 +18,8 @@ const App = () => {
 
       <h1>{user.name}</h1>
       <h1>{skills[1]}</h1>
+
+      <button onClick={() => alertMsg("Deep")}>Click Me</button>
     </>
   );
 };
